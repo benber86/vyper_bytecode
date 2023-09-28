@@ -12,7 +12,6 @@ Vyper binaries were compiled using `Vyper 0.3.9` and the following command:
 
 `vyper {contract.vy} > {contract.bin}`
 
-<hr> 
 
 ## ERC20 Standard
 
@@ -22,7 +21,6 @@ We compare <a href="https://github.com/de33/ERC20Permit/blob/main/contracts/ERC2
 
 While solady's implementation is slightly smaller, it is worth noting that the code heavily relies on inline assembly to be more efficient while the Vyper contract was a very standard one. There is no inline assembly in Vyper, but you get the same efficiency with a high level language.
 
-<hr>
 
 ## ERC4626 Standard
 
@@ -32,7 +30,6 @@ We compare <a href="https://github.com/fubuloubu/ERC4626/blob/main/contracts/Vyp
 
 Vyper offers a 24% reduction over the next smallest compiled binary (solady) and a 34% reduction compared to the average of all Solidity implementations.
 
-<hr>
 
 ## Sample contracts
 
